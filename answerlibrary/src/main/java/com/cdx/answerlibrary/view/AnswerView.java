@@ -91,7 +91,7 @@ public class AnswerView extends RelativeLayout {
         try {
             AssetManager assetManager = mContext.getAssets();
             XmlPullParser parser = Xml.newPullParser();
-            is = assetManager.open("fileName", AssetManager.ACCESS_STREAMING);//按顺序读取
+            is = assetManager.open(fileName, AssetManager.ACCESS_STREAMING);//按顺序读取
             parser.setInput(is, "utf-8");
             //开始解析
             int type = parser.getEventType();//解析的类型,光标在文件的开头
