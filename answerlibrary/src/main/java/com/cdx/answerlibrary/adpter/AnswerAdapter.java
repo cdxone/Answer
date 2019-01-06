@@ -41,7 +41,7 @@ public class AnswerAdapter extends BaseAdapter {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.answer_view_lv_item, parent, false);
         TextView tvAsk = view.findViewById(R.id.tv_ask);
-        tvAsk.setText(mAnswers.get(position).getTitle());
+        tvAsk.setText(position + "、" + mAnswers.get(position).getTitle());
         return view;
     }
 }
