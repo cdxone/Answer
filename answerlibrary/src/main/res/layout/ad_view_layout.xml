@@ -10,5 +10,6 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         tools:text="xxxxx"
+        android:textColor="@android:color/black"
         />
 </ScrollView>
